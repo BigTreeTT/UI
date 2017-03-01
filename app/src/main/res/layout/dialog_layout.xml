@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="信息提示:"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/dialog_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="下次开机是否自动进入此向导？"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/dialog_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/dialog_but1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="好的"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/dialog_msg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="61dp"
+        android:layout_marginEnd="61dp" />
+
+    <Button
+        android:id="@+id/dialog_but2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="不用了"
+        android:layout_alignBaseline="@+id/dialog_but1"
+        android:layout_alignBottom="@+id/dialog_but1"
+        android:layout_toRightOf="@+id/dialog_title"
+        android:layout_toEndOf="@+id/dialog_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_below="@+id/dialog_but2"
+        android:layout_toRightOf="@+id/dialog_but2"
+        android:layout_toEndOf="@+id/dialog_but2"
+        android:layout_marginTop="103dp"
+        android:id="@+id/textView4" />
+</RelativeLayout>

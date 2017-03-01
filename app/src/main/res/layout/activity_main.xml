@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.longteng.androidui.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/textView"
+        />
+
+    <Button
+        android:text="ShowDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="21dp"
+        android:textAllCaps="false"
+        android:id="@+id/showDialog"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:text="ToolsBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_below="@+id/showDialog"
+        android:layout_alignLeft="@+id/showDialog"
+        android:layout_alignStart="@+id/showDialog"
+        android:layout_marginTop="24dp"
+        android:id="@+id/toolsBar"
+        android:layout_alignRight="@+id/showDialog"
+        android:layout_alignEnd="@+id/showDialog"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:onClick="onClick"
+        android:text="toTextActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolsBar"
+        android:layout_alignLeft="@+id/toolsBar"
+        android:layout_alignStart="@+id/toolsBar"
+        android:layout_marginTop="17dp"
+        android:textAllCaps="false"
+        android:id="@+id/toTextActivity" />
+
+    <Button
+        android:onClick="onClick"
+        android:text="toWebView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/toWebView"
+        android:layout_below="@+id/toTextActivity"
+        android:layout_alignLeft="@+id/toTextActivity"
+        android:layout_alignStart="@+id/toTextActivity"
+        android:textAllCaps="false"
+        android:layout_alignRight="@+id/toTextActivity"
+        android:layout_alignEnd="@+id/toTextActivity" />
+
+    <Button
+        android:text="toAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toWebView"
+        android:layout_alignLeft="@+id/toWebView"
+        android:layout_alignStart="@+id/toWebView"
+        android:layout_marginTop="28dp"
+        android:id="@+id/toAnimation"
+        android:textAllCaps="false"
+        android:onClick="onClick"
+        android:layout_alignRight="@+id/toWebView"
+        android:layout_alignEnd="@+id/toWebView" />
+
+    <Button
+        android:text="toProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/showDialog"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp"
+        android:id="@+id/toProgressBar"
+        android:textAllCaps="false"
+        android:onClick="onClick"/>
+
+    <Button
+        android:text="toService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toTextActivity"
+        android:layout_alignLeft="@+id/toProgressBar"
+        android:layout_alignStart="@+id/toProgressBar"
+        android:id="@+id/toService"
+        android:onClick="onClick"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:text="toSecurity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toTextActivity"
+        android:layout_alignLeft="@+id/toService"
+        android:layout_alignStart="@+id/toService"
+        android:id="@+id/btn_to_security"
+        android:textAllCaps="false"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:text="toNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toWebView"
+        android:layout_alignLeft="@+id/btn_to_security"
+        android:layout_alignStart="@+id/btn_to_security"
+        android:id="@+id/btn_to_notification"
+        android:textAllCaps="false"
+        android:onClick="onClick"/>
+
+    <Button
+        android:text="toCustomView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toAnimation"
+        android:layout_alignLeft="@+id/btn_to_notification"
+        android:layout_alignStart="@+id/btn_to_notification"
+        android:id="@+id/btn_to_custom"
+        android:textAllCaps="false"
+        android:onClick="onClick"/>
+
+
+</RelativeLayout>

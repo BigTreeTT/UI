@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.longteng.androidui.Notification.NotificationActivity">
+
+    <Button
+        android:text="DefaultNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="39dp"
+        android:id="@+id/btn_default_notification"
+        android:onClick="sendDefaultNotification"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:text="WorkNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_default_notification"
+        android:layout_alignLeft="@+id/btn_default_notification"
+        android:layout_alignStart="@+id/btn_default_notification"
+        android:layout_marginTop="23dp"
+        android:id="@+id/btn_work_notification"
+        android:textAllCaps="false"
+        android:onClick="sendWorkNotification"/>
+    <ToggleButton
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_work_notification"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@+id/btn_default_notification"
+        android:layout_alignStart="@+id/btn_default_notification"
+        android:textOn=""
+        android:textOff=""
+        />
+</RelativeLayout>
