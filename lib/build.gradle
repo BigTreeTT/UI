@@ -4,7 +4,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 
 //设置Jitpack发布的Group
 //我的github账号是helen-x, 对应我的group就是com.github.helen-x
-group='https://github.com/BigTreeTT'
+group='com.github/BigTreeTT'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
